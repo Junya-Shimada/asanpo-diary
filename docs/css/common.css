@@ -1,0 +1,173 @@
+
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+main{
+    height: 100%;
+}
+
+a{
+    color: #000000;         /* aタグの色を指定 */
+    text-decoration: none;    /* aタグの下線削除 */
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;        /* 中の最初と最後の要素を両端に揃え、残りの要素を均等に配置（両端にスペースが入る） */
+    align-items: center;                  /* 中の要素を上下中央に配置（注 display: flex） */
+    border-bottom: 1px solid #808080;   /* タグの境界線を表示*/
+    background-color: #ffffff;
+    z-index: 5;
+}
+
+#header h3{
+    font-family: 'Marck Script', cursive;
+    font-size: 28px;
+}
+
+#talk-nav{
+    margin-left: 150px;
+}
+#talk-nav h3{
+    margin-bottom: 2.5%;
+}
+
+#footer{
+    position: relative;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    justify-content: space-around;        /* 中の最初と最後の要素を両端に揃え、残りの要素を均等に配置（両端にスペースが入る） */
+    align-items: center;                  /* 中の要素を上下中央に配置（注 display: flex） */
+    background-color: #ffffff;           
+    border-top: 1px solid #808080;      /* タグの境界線を表示*/
+}
+
+.header-nav{
+    display: flex;
+    text-transform: uppercase;
+}
+
+.header-nav li{
+    display: flex;
+    float: left;
+    width: 125px;
+    font-size: 15px;
+    align-items: center;                  /* 中の要素を上下中央に配置（注 display: flex） */
+    justify-content: center;
+    border-left: 2px solid #000000;
+}
+
+.header-nav li:last-child{
+    border-right: 2px solid #000000;
+}
+
+.header-nav a{
+    display:flex;
+    align-items: center;
+}
+
+.pc{
+    display: block !important;
+}
+
+.sp{
+    display: none !important;
+}
+
+
+
+
+
+
+
+/* ------------------------------ */
+/* ---------- モバイル版 ---------- */
+/* ------------------------------ */
+
+@media (max-width: 600px) {
+
+    header h3{
+        position: absolute;
+        font-family: 'Marck Script', cursive;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    footer{
+        position: relative;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 75px;
+        justify-content: space-around;        /* 中の最初と最後の要素を両端に揃え、残りの要素を均等に配置（両端にスペースが入る） */
+        align-items: center;                  /* 中の要素を上下中央に配置（注 display: flex） */
+        background-color: #ffffff;
+        border-top: 1px solid #808080;      /* タグの境界線を表示*/
+    }
+
+    #hamburger-btn{
+        background: transparent;
+        position: absolute;
+        left: 0;
+        height: 150px;
+        width: 80px;
+        border: none;
+        font-size: 25px;
+    }
+    
+    #hamburger-nav{
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 50px;
+        justify-content: center;
+        width: 75%;
+        background-color: rgba(255,255,255,.9);
+    }
+
+    .header-nav{
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+    }
+
+    .header-nav li{
+        margin: 20px auto;
+        width: 150px;
+        font-size: 20px;
+        border: none;
+    }
+    
+    .header-nav li:last-child{
+        border: none;
+    }
+
+
+
+    .pc{
+        display: none !important;
+    }
+
+    .sp{
+        display: block !important;
+    }
+
+}    

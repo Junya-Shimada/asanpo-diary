@@ -1,0 +1,33 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#bg-morning{
+    background-image: url('../images/morning.jpg');
+    position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#login-main{
+    color: #ffffff;
+    margin: 10% 0;
+}
+
+#login-title{
+    display: flex;
+    justify-content: center;
+}
+
+#main-content{
+    display: flex;
+    margin-top: 5%;
+    font-size: 25px;
+    justify-content: center;
+}
+#main-content a{
+    color: #ffffff;
+}

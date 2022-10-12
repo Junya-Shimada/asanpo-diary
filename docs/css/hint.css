@@ -1,0 +1,117 @@
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    margin: 0 auto;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+p{
+    color: #ffffff;
+}
+
+span{
+    font-weight: bold;
+    background : linear-gradient(transparent 50%, orange 85%);
+}
+
+#bg-morning{
+    background-image: url('../images/morning.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*  */
+#post{
+    display: flex;
+    margin: 51px 100px 0 100px;
+    padding: 50px 250px 50px 50px;
+}
+#post-img{
+    width: 45%;
+    height: auto;
+    margin-right: 75px;
+}
+
+/*  */
+#diary{
+    display: flex;
+    margin: 0 100px;
+    padding: 50px 50px 50px 250px;
+}
+#diary-img{
+    width: 45%;
+    height: auto;
+    margin-left: 75px;
+}
+
+/*  */
+#omake{
+    display: flex;
+    margin: 0 100px;
+    padding: 50px 300px 50px 50px;
+}
+#omake-img{
+    width: 45%;
+    height: auto;
+    margin-right: 75px;
+}
+
+
+
+
+/* ------------------------------ */
+/* ---------- モバイル版 ---------- */
+/* ------------------------------ */
+
+@media (max-width: 600px) {
+ 
+    #post{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 75px auto 50px;
+        padding: 0;
+    }
+    #post-img{
+        margin: 25px auto;
+        width: 75%;
+        height: auto;
+    }
+    
+    /*  */
+    #diary{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 50px auto;
+        padding: 0;
+    }
+    #diary-img{
+        margin: 25px auto;
+        width: 75%;
+        height: auto;
+    }
+    
+    /*  */
+    #omake{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 25px auto 50px;
+        padding: 0;
+    }
+    #omake-img{
+        margin: 25px auto;
+        width: 75%;
+        height: auto;
+    }
+
+}

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/posting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://kit.fontawesome.com/b3fda0200e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>あさんぽ</title>
+</head>
+<body id="bg">
+
+<!-- Header -->
+    <header id="header">
+        ここにheader.htmlが読み込まれる（読み込み失敗）
+    </header>
+
+<!-- main -->    
+    <main>
+
+        <!-- For PC -->
+        <form id="post-form" class="pc">
+            <label>
+                <h1 id="posting-title">今朝の記録をつけましょう</h1>
+            </label>
+            <label> 
+                <h2 id="clock-pc"></h2>
+            </label>
+            <label>
+                <span class="input-title">タイトル</span>
+                <input type="text" id="title-pc">
+            </label>
+            <label>
+                <span class="input-title">写真を選択</span>
+                <input type="file" id= "image-pc" accept=".png, .jpg, .jpeg, .pdf" onChange="OnFileUploadToFirebase()">
+                <img id="preview"></img>
+            </label>
+            <label>
+                <span class="input-title">本文</span>
+                <textarea id= "sentence-pc"></textarea>
+            </label>
+            <label>
+                <button type="submit" id="resister-btn-pc" onclick="resister()">投稿</button>
+            </label>
+        </form>
+
+
+        <!-- For Smart Phone -->
+        <form id="post-form" class="sp">
+            <label>
+                <h1 id="posting-title">今朝の記録をつけましょう</h1>
+            </label>
+            <label>
+                <h2 id="clock-sp"></h2>
+            </label>
+            <label>
+                <span class="input-title">タイトル</span>
+                <input type="text" id="title-sp">
+            </label>
+            <label>
+                <span class="input-title">写真を選択</span>
+                <input type="file" id= "image-sp" accept=".png, .jpg, .jpeg, .pdf">
+            </label>
+            <label>
+                <span class="input-title">本文</span>
+                <textarea id= "sentence-sp"></textarea>
+            </label>
+            <label>
+                <button type="submit" id="resister-btn-sp" onclick="resister()">投稿</button>
+            </label>
+        </form>
+
+    </main>    
+
+    <script src="../js/script.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/variable.js"></script>
+    <script src="../js/posting.js"></script>
+</body>
+</html>

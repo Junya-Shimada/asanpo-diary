@@ -1,0 +1,190 @@
+
+#index-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;        /* 中の最初と最後の要素を両端に揃え、残りの要素を均等に配置（両端にスペースが入る） */
+    align-items: center;                  /* 中の要素を上下中央に配置（注 display: flex） */
+    border-bottom: 1px solid #808080;   /* タグの境界線を表示*/
+    background-color: #ffffff;
+    z-index: 5;
+}
+
+#index-header h3{
+    font-family: 'Marck Script', cursive;
+    font-size: 28px;
+}
+
+#top-content1{
+    position: relative;
+    top: 51px;
+    height: 100%;
+    margin: 50px 250px 120px;
+}
+
+#top-content2{
+    display: flex;
+    position: relative;
+    top: 0;
+    margin: 0 80px;
+    padding: 75px 0;
+    height: 100%;
+    border-top: 1px solid #555555;
+}
+
+#bg-morning{
+    background-image: url('../images/morning.jpg');
+    position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#index-footer{
+    position: relative;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    justify-content: space-around;        /* 中の最初と最後の要素を両端に揃え、残りの要素を均等に配置（両端にスペースが入る） */
+    align-items: center;                  /* 中の要素を上下中央に配置（注 display: flex） */
+    background-color: #ffffff;           
+    border-top: 1px solid #808080;      /* タグの境界線を表示*/
+}
+
+.article1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0 100px;
+    color: #ffffff;
+}
+
+.article1 h1{
+    display: flex;
+    margin: 250px 0 50px;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.article1 p{
+    display: flex;
+    justify-content: center;
+    font-size: 17.5px;
+}
+
+.article2{
+    position: relative;
+    margin: 0 30px;
+}
+
+.article2 h3{
+    margin-bottom: 2.5%;
+
+}
+
+.signature{
+    position: absolute;
+    right: 5%;
+    margin-top: 2.5%;
+}
+
+
+
+
+/*----------------------------
+scroll_up ｜下から上へ出現
+----------------------------*/
+.scroll-up {
+    margin: 50px 0 57px;
+    transition: 1.25s ease-in-out;
+    transform: translateY(50px);
+    opacity: 0;
+}
+.scroll-up.on {
+    transform: translateY(0);
+    opacity: 1.0;
+}
+
+
+.slider{
+    display: flex;
+}
+
+.slider li {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.slider img{
+    width: 95%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------ */
+/* ---------- モバイル版 ---------- */
+/* ------------------------------ */
+
+@media (max-width: 600px) {
+    #top-content1{
+        position: relative;
+        top: 51px;
+        height: 100%;
+        margin: 25px 50px;
+    }
+    
+    #top-content2{
+        position: relative;
+        top: 0px;
+        height: 100%;
+        margin: 0 25px;
+    }
+
+    .bg-top{
+        position: relative;
+        background-image: url('../images/morning.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .article1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12.5px;
+        color: #ffffff;
+    }
+    
+    .article1 h1{
+        display: flex;
+        margin: 250px 0 50px;
+        justify-content: center;
+        font-size: 27.5px;
+    }
+
+    .article1 p{
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+}
+
+
+

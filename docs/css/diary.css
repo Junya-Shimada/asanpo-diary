@@ -1,0 +1,192 @@
+
+
+
+img{
+    width: 100%;
+}
+
+
+
+#bg-pc{
+    background-image: url('../images/coffee.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#diary-top{
+    display: block;
+}
+
+#diary-page{
+    display: none;
+}
+
+#title{
+    position: relative;
+    top: 150px;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    color: #ffffff;
+    background-color: #000000;
+    text-shadow: 3px 3px 0 #472200;
+}
+
+#date{
+    position: relative;
+    margin: 150px auto 0;
+    padding-bottom: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #000000;
+    text-shadow: 2px 2px 0 #472200;
+}
+
+#sentence{
+    position: relative;
+    margin: 100px 300px 0;
+    padding: 75px 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #472200;
+}
+
+
+#diary-tile{
+    position: relative;
+    top: 250px;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+}
+
+#newTitle{
+    font-size: 40px;
+}
+
+#return-btn{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    color: #472200;
+    text-shadow: 2px 2px 0 #ffffff;
+}
+
+#return-btn button{
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 20px;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 250px));
+}
+
+.tile-item{
+    width: 100%;
+    height: 175px;
+    color: #6f5436;
+    background-color: #eae1cf;
+}
+
+.tile-item p{
+    display: flex;
+    justify-content: center;
+}
+
+.tile-item img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+
+
+/* ------------------------------ */
+/* ---------- モバイル版 ---------- */
+/* ------------------------------ */
+
+@media (max-width: 600px) {
+ 
+    #bg-sp{
+        background-image: url('../images/coffee_for_sp2.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    #diary-tile{
+        position: relative;
+        top: 150px;
+        margin: 0 10%;
+        width: 80%;
+        height: 100%;
+    }
+
+
+    .grid{
+        display: grid;
+        grid-gap: 20px;
+        place-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    
+    
+    
+    /* for diary pages */
+    #title{
+        padding-top: 5px;
+        top: 100px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        color: #ffffff;
+        text-shadow: 2px 2px 0 #472200;
+    }
+
+    #date{
+        margin: 99px auto 0;
+        padding-bottom: 5px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: #ffffff;
+        text-shadow: 2px 2px 0 #472200;
+    }
+    
+    #sentence{
+        position: relative;
+        margin: 50px 25px;
+        padding: 25px 10px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: #472200;
+    }
+    
+    #return-btn{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #return-btn button{
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
+}
