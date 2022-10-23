@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/example/yoridokoro/BuildConfig.java
+ com.example.yoridokoro.BuildConfig
