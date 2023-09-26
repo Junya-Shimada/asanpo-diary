@@ -20,27 +20,9 @@
 <body>
 
 <!-- Header -->
-<header id="index-header">
-    
-    <!-- For PC -->
-    <h3 class="pc"><a href="./index.html">Asanpo Diary</a></h3>
-    <nav class="pc">
-        <ul class="header-nav">
-            <li><a href="https://www.instagram.com/iam_junya.s"><i class="fab fa-2x fa-instagram"></i></a></li>
-            <li><a href="./html/signup.html">log in</a></li>
-        </ul>
-    </nav>
-    
-    <!-- For Smart Phone -->
-    <button id="hamburger-btn" onclick="changeHamburger()" class="sp"><i class="fa fa-align-justify"></i></button>
-    <h3 class="sp"><a href="./index.html">Asanpo Diary</a></h3>
-    <nav class="sp">
-        <ul id="hamburger-nav" class="header-nav">
-            <li><a href="https://www.instagram.com/iam_junya.s"><i class="fab fa-2x fa-instagram"></i></a></li>
-            <li><a href="./html/signup.html">Sign Up</a></li>
-        </ul>
-    </nav>
-</header>
+    <header id="header">
+        ここにheader.htmlが読み込まれる（読み込み失敗）
+    </header>
 
 <!-- main -->
     <main>
@@ -53,7 +35,6 @@
                 <!-- The article for pc -->
                     <div class="scroll-up pc">
                         <p>おはようございます</p>
-                    
                         <p>今日も1日頑張りましょう</p>
                     </div>
                 <!-- The article for smart phone -->
@@ -78,43 +59,38 @@
         
         <section id="top-content2">
             <article class="article2">
-                <h3> - 管理人のひとりごと - </h3>
-                <!-- <p>「継続」というものは想像以上に達成感を感じられ、自己肯定感を高めてくれるものだと私は思う。</p> -->
-                <!-- <p>しかし、そのハードルもまた想像以上に高いのだろう。最初からコツコツ頑張れる人はそう多くない。</p> -->
-                <!-- <p>ハードルが高いのなら、まずは低くすればいい。最初こそ、まずは「できるヨロコビ」が大切なのだ。</p> -->
-                <!-- <p>そう、『ハイキュー』の猫又監督の考え方に影響を受けている(笑) とはいえ、本当にその通りだと思う。</p> -->
-                <!-- <p>さて、どうすればハードルは低くなるのだろう。と考えた結果、誕生したのがこの「あさんぽ日記」。</p> -->
-                <!-- <p>継続する習慣をつけたい人は、とりあえず騙されたと思って使ってみて欲しい。</p> -->
-                <!-- <p>そして、追加で欲しい機能や使いやすい機能などがあればフィードバックとして教えて欲しい。</p> -->
-                <!-- <p>私は何かを頑張ろうとしているあなたと一緒に、この「あさんぽ日記」をより良いものにしてゆきたい。</p> -->
-                <!-- <p class="signature"> - 2022/7/20 - </p> -->
-                
+                <h3> - 管理人のひとりごと - </h3>                
                 <p>「継続」</p>
                 <p>これは想像以上に達成感を感じられ、自己肯定感を高めてくれるものだと私は思う。</p>
-                <p></p>
-                <p>しかし、そのハードルもまた想像以上に高いのだろう。常にコツコツ頑張れる人はそう多くない。</p>
-                <p>ふとした時に、</p>
-                <p></p>
+                <p>しかし、そのハードルもまた想像以上に高いのだろう。常にコツコツ頑張れる人は少なく感じる。</p>
                 <p>継続する習慣をつけたい人は、とりあえず騙されたと思って使ってみて欲しい。</p>
                 <p>そして、追加で欲しい機能や使いやすい機能などがあればフィードバックとして教えて欲しい。</p>
-                <p>私は何かを頑張ろうとしているあなたと一緒に、この「あさんぽ日記」をより良いものにしてゆきたい。</p>
+                <p>私は何かを頑張ろうとしているあなたと一緒に、この「あさんぽ日記」をより良いものにしていきたい。</p>
                 <p class="signature"> - 2022/8/27 - </p>
             </article>
             <nav id="talk-nav" class="pc">
                 <h3> - 過去のひとりごと - </h3>
+                <ul>
+                    <li><a href="./html/top.html">2022/8/27</a></li>
+                </ul>
             </nav>
         </section>
         
     </main>
     
 <!-- Footer -->
-    <section id="index-footer">
+    <section id="footer">
         ここにfooter.htmlが読み込まれる（読み込み失敗）
     </section>
     
 
     <script src="./js/variable.js"></script>
     <script src="./js/script.js"></script>
-    <script src="./js/common.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("./html/header.html");
+            $("#footer").load("./html/footer.html");
+        });
+    </script>
 </body>
 </html>
